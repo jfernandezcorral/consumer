@@ -4,7 +4,7 @@ import Comercial from './comercial/Comercial';
 import ScrollInfinito from 'cmp/base/ScrollInfinito';
 import {modal} from 'cmp/base/modal';
 import {menu} from 'cmp/base/menu';
-import {Registro, pub} from 'registro'
+import {Registro, pub} from 'registro/lib/index_sin_css'
 //import {modal, menu} from 'reactcomponent'
 export default class App extends React.Component {
     constructor(props) {

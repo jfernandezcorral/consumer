@@ -44,11 +44,21 @@ let config = {
           ]
         }) 
       },
-      { test: /\.css$/, 
+      { test: /\.css$/,
+        exclude: new RegExp('node_modules\\' + path.sep + 'registro'), 
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: [
             {loader: 'css-loader', options: {modules: true, localIdentName: '[name]__[local]___[hash:base64:5]', sourceMap: true}}
+          ]
+        }) 
+      },
+      { test: /\.css$/,
+        include: new RegExp('node_modules\\' + path.sep + 'registro'), 
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: [
+            {loader: 'css-loader', options: {sourceMap: true}}
           ]
         }) 
       },

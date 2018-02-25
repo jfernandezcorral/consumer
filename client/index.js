@@ -1,4 +1,6 @@
 import './base.scss'
+import 'registro/lib/style.css'
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './componentes/App'
