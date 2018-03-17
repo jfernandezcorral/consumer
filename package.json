@@ -1,7 +1,7 @@
 {
-  "name": "r",
+  "name": "consumer",
   "version": "1.0.0",
-  "description": "proyecto react tipo",
+  "description": "proyecto react consumidor de librería",
   "main": "index.js",
   "author": "Julio Fernández",
   "license": "MIT",
@@ -15,7 +15,8 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "registro": "git+https://aqdes-stash02.cm.es/stash/scm/ficclmkme/fichacom-componente-registro.git"
+    "swl": "git+https://aqdes-stash.cm.es/stash/scm/aicli/swl.git",
+    "swl-neo": "git+https://aqdes-stash.cm.es/stash/scm/aicli/swl-neo.git"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

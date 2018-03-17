@@ -4,7 +4,7 @@ import Comercial from './comercial/Comercial';
 import ScrollInfinito from 'cmp/base/ScrollInfinito';
 import {modal} from 'cmp/base/modal';
 import {menu} from 'cmp/base/menu';
-import {Registro, pub} from 'registro/lib/index_sin_css'
+
 //import {modal, menu} from 'reactcomponent'
 export default class App extends React.Component {
     constructor(props) {
@@ -23,7 +23,7 @@ export default class App extends React.Component {
        this.cerrar = modal(diag)
     }
     handleimg(e){
-        pub({op: 'mostrar'})
+        window.registro.pub({op: 'mostrar'})
         /*menu([
                 {t: 'opción 1', cb: () => console.log('opcion1')},
                 {t: 'opción 2', cb: () => console.log('opcion2')}
@@ -31,6 +31,7 @@ export default class App extends React.Component {
         )*/
     }
     render() {
+        const Registro = window.registro? window.registro.Registro: ()=>null
         return (
         	<div style={{height: '100%', display: 'flex'/*, alignItems: 'stretch'*/}}>
         		<aside style={{width: '30%', marginRight: '5px'}} className={estilos.panel}>

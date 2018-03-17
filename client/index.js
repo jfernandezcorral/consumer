@@ -1,11 +1,19 @@
 import './base.scss'
-import 'registro/lib/style.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './componentes/App'
+import SWLNEO from 'swl-neo'
+import SWL from 'swl'
+window.React = React
+window.ReactDOM = ReactDOM
+window.SWLNEO = SWLNEO
+window.SWL = SWL
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import App from './componentes/App'
+window.addEventListener('load', ()=>{
+    ReactDOM.render(<App />, document.getElementById('root'))
+})
+
 
 /*let a = {a: 'a'}
 let b = {b: 'b'}
